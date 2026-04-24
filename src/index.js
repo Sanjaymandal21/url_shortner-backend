@@ -1,0 +1,13 @@
+import http from 'http'
+import 'dotenv/config'
+import app from './app.js'
+import connectToDb from './db/db.connect.js'
+
+const server=http.createServer(app)
+
+const PORT = process.env.PORT || 3000
+
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Listening on port: ${PORT}`)
+    connectToDb()
+})

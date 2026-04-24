@@ -14,13 +14,5 @@
       "src": "/(.*)",
       "dest": "src/index.js"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "MONGO_URI": "@mongo_uri",
-    "TOKEN_SECRET": "@token_secret",
-    "SMTP_USER": "@smtp_user",
-    "SMTP_PASS": "@smtp_pass",
-    "FRONTEND_URL": "@frontend_url"
-  }
+  ]
 }
